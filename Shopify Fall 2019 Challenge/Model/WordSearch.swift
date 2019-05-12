@@ -78,11 +78,17 @@ class WordSearch {
     }
     
     func makeWords() {
-        words.append(Word(wordItem:"CODING"))
-        words.append(Word(wordItem:"SHOPIFY"))
-        words.append(Word(wordItem:"DEVELOPER"))
-        words.append(Word(wordItem:"TORONTO"))
-        words.append(Word(wordItem:"CANADA"))
+        words.append(Word(wordItem:"Swift"))
+        words.append(Word(wordItem:"Kotlin"))
+        words.append(Word(wordItem:"ObjectiveC"))
+        words.append(Word(wordItem:"Variable"))
+        words.append(Word(wordItem:"Java"))
+        words.append(Word(wordItem:"Mobile"))
+        
+        words.forEach { word in
+            word.wordItem = word.wordItem.uppercased()
+        }
+        //Swift, Kotlin, ObjectiveC, Variable, Java, Mobile
     }
     
     func makeGrid() {

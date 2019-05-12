@@ -28,10 +28,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yui-T2-Skp" kind="show" id="AaD-Jn-DV8">
-                                        <segue key="commit" inheritsFrom="parent" id="H03-j6-7UB"/>
-                                        <segue key="preview" inheritsFrom="commit" id="gkF-CB-ZYS"/>
-                                    </segue>
+                                    <segue destination="fjC-F8-kiB" kind="show" id="C6g-uu-Wka"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,13 +41,110 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--gameView-->
-        <scene sceneID="c6I-qs-eqS">
+        <!--Game View Controller-->
+        <scene sceneID="Hn4-7r-VLA">
             <objects>
-                <viewControllerPlaceholder storyboardName="GameView" referencedIdentifier="gameView" id="Yui-T2-Skp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Iv0-0e-We4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fjC-F8-kiB" customClass="GameViewController" customModule="Shopify_Fall_2019_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RFY-AJ-QSk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TpM-QU-heb">
+                                <rect key="frame" x="0.0" y="178" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TpM-QU-heb" secondAttribute="height" multiplier="1:1" id="8BY-KB-klB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CFN-Eu-Rqt">
+                                    <size key="itemSize" width="78" height="78"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="ga4-gd-XMu" customClass="LabelCollectionViewCell" customModule="Shopify_Fall_2019_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2y-ko-T61">
+                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="z2y-ko-T61" secondAttribute="height" multiplier="1:1" id="gMF-Eh-oSW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="z2y-ko-T61" firstAttribute="top" secondItem="ga4-gd-XMu" secondAttribute="top" id="34u-4F-hfZ"/>
+                                            <constraint firstItem="z2y-ko-T61" firstAttribute="leading" secondItem="ga4-gd-XMu" secondAttribute="leading" id="5CA-dv-IB8"/>
+                                            <constraint firstAttribute="trailing" secondItem="z2y-ko-T61" secondAttribute="trailing" id="VYO-FD-oEv"/>
+                                            <constraint firstAttribute="bottom" secondItem="z2y-ko-T61" secondAttribute="bottom" id="ssN-NJ-a5Q"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="z2y-ko-T61" id="KSk-ns-gy8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fjC-F8-kiB" id="8hY-9U-x1s"/>
+                                    <outlet property="delegate" destination="fjC-F8-kiB" id="ki6-WW-yYX"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwj-I8-tfd" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="2" y="561" width="375" height="106"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" red="0.22468143730000001" green="0.70196078429999997" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TpM-QU-heb" firstAttribute="centerY" secondItem="Cio-C9-On2" secondAttribute="centerY" id="4EJ-Mi-HUU"/>
+                            <constraint firstItem="Nwj-I8-tfd" firstAttribute="bottom" secondItem="Cio-C9-On2" secondAttribute="bottom" id="MD0-Bf-JYI"/>
+                            <constraint firstItem="Nwj-I8-tfd" firstAttribute="trailing" secondItem="Cio-C9-On2" secondAttribute="trailing" constant="2" id="TVD-Oo-3jp"/>
+                            <constraint firstItem="TpM-QU-heb" firstAttribute="centerX" secondItem="Cio-C9-On2" secondAttribute="centerX" id="f8E-XP-a4v"/>
+                            <constraint firstItem="Nwj-I8-tfd" firstAttribute="centerX" secondItem="Cio-C9-On2" secondAttribute="centerX" id="hSc-DS-nOn"/>
+                            <constraint firstItem="Nwj-I8-tfd" firstAttribute="top" secondItem="TpM-QU-heb" secondAttribute="bottom" constant="8" id="oGt-E6-DeY"/>
+                            <constraint firstItem="TpM-QU-heb" firstAttribute="width" secondItem="RFY-AJ-QSk" secondAttribute="width" id="s9v-T9-Cuv"/>
+                            <constraint firstItem="Nwj-I8-tfd" firstAttribute="leading" secondItem="Cio-C9-On2" secondAttribute="leading" constant="2" id="wYb-3I-O8M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cio-C9-On2"/>
+                    </view>
+                    <connections>
+                        <outlet property="myCollectionView" destination="TpM-QU-heb" id="u8C-2V-xck"/>
+                        <outlet property="wordsListView" destination="Nwj-I8-tfd" id="2dq-Ne-gXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnz-g1-9Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748.8" y="-101.64917541229386"/>
+            <point key="canvasLocation" x="1892" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vMJ-q8-Xxk">
@@ -71,7 +165,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="AaD-Jn-DV8"/>
-    </inferredMetricsTieBreakers>
 </document>
