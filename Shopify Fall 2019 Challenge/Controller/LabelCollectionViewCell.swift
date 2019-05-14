@@ -11,6 +11,12 @@ import UIKit
 class LabelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
+    override var isSelected: Bool {
+        didSet {
+            self.backgroundColor = self.isSelected ? .gray : .white
+        }
+    }
+    
     func set(withText text: String) {
         label.text = text
     }

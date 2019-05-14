@@ -1,0 +1,16 @@
+PODS:
+  - TagListView (1.4.0)
+
+DEPENDENCIES:
+  - TagListView (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - TagListView
+
+SPEC CHECKSUMS:
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
+
+PODFILE CHECKSUM: 4b261d633ba03d2a5c46369ed5cf09e366edbbd3
+
+COCOAPODS: 1.5.2

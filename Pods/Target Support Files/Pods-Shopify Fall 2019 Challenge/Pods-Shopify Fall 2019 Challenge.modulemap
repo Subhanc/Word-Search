@@ -1,0 +1,6 @@
+framework module Pods_Shopify_Fall_2019_Challenge {
+  umbrella header "Pods-Shopify Fall 2019 Challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

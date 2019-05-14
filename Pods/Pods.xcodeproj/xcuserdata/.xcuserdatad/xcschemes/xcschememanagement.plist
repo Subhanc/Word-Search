@@ -4,11 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Shopify Fall 2019 Challenge.xcscheme_^#shared#^_</key>
+		<key>Pods-Shopify Fall 2019 Challenge.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TagListView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>
