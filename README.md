@@ -9,6 +9,9 @@
 ## Installation
 To build and run the project, click on "Open in Xcode" on GitHub, run `pod init` in the project directory, and open in Xcode and Build and Run.
 
+## Documentation
+Documentation for the entire project can be viewed through the docs folder or live on https://wwww.subhanc.com/Shopify-Challenge-iOS-Fall-2019
+
 ## Credits
 Designed and Developed by Subhan Chaudhry
 TagListView by: https://github.com/ElaWorkshop/TagListView
