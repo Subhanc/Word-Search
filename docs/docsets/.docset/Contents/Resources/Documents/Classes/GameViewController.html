@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GameViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GameViewController" class="dashAnchor"></a>
+    <a title="GameViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://github.com/Subhanc/Shopify-Challenge-iOS-Fall-2019"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GameViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameViewController.html">GameViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Label.html">Label</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LabelCollectionViewCell.html">LabelCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Word.html">Word</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WordSearch.html">WordSearch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacementType.html">PlacementType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GameViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">GameViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IB%20Outlets"></a>
+                <a name="//apple_ref/swift/Section/IB Outlets" class="dashAnchor"></a>
+                <a href="#/IB%20Outlets">
+                  <h3 class="section-name">IB Outlets</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(py)myCollectionView"></a>
+                    <a name="//apple_ref/swift/Property/myCollectionView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(py)myCollectionView">myCollectionView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Collection View that holds the word search game.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">myCollectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC09wordsListE0Xevp"></a>
+                    <a name="//apple_ref/swift/Property/wordsListView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC09wordsListE0Xevp">wordsListView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tag List View for displaying words collection found / to be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">wordsListView</span><span class="p">:</span> <span class="kt">TagListView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(py)wordsCollectedLabel"></a>
+                    <a name="//apple_ref/swift/Property/wordsCollectedLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(py)wordsCollectedLabel">wordsCollectedLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label to display number of words currently collected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">wordsCollectedLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/WordSearch%20Vars"></a>
+                <a name="//apple_ref/swift/Section/WordSearch Vars" class="dashAnchor"></a>
+                <a href="#/WordSearch%20Vars">
+                  <h3 class="section-name">WordSearch Vars</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC6labelsSayAA5LabelCGvp"></a>
+                    <a name="//apple_ref/swift/Property/labels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC6labelsSayAA5LabelCGvp">labels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Collapsed 1-D wordSearch labels array to display letters in myCollectionView</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Label.html">Label</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10wordSearchAA04WordH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/wordSearch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10wordSearchAA04WordH0Cvp">wordSearch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>WordSearch object model to generate word search grid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">wordSearch</span><span class="p">:</span> <span class="kt"><a href="../Classes/WordSearch.html">WordSearch</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10foundWordsSDySSSbGvp"></a>
+                    <a name="//apple_ref/swift/Property/foundWords" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10foundWordsSDySSSbGvp">foundWords</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary to hold found words in wordSearch by user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">foundWords</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Bool</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Selection%20Vars"></a>
+                <a name="//apple_ref/swift/Section/Selection Vars" class="dashAnchor"></a>
+                <a href="#/Selection%20Vars">
+                  <h3 class="section-name">Selection Vars</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC21lastSelectedIndexPath10Foundation0iJ0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/lastSelectedIndexPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC21lastSelectedIndexPath10Foundation0iJ0Vvp">lastSelectedIndexPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Index Path to cell that was last selected, initially a blank object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lastSelectedIndexPath</span><span class="p">:</span> <span class="kt">IndexPath</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC19isFirstSelectedCellSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFirstSelectedCell" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC19isFirstSelectedCellSbvp">isFirstSelectedCell</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the last selected cell is the first in selection, used to determine direction</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFirstSelectedCell</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC17firstSelectedCell10Foundation9IndexPathVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/firstSelectedCell" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC17firstSelectedCell10Foundation9IndexPathVSgvp">firstSelectedCell</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>First cell in drag selection</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">firstSelectedCell</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9directionSi1x_Si1ytSgvp"></a>
+                    <a name="//apple_ref/swift/Property/direction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9directionSi1x_Si1ytSgvp">direction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Direction of current selection in unit vector form</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">direction</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Word%20Count%20and%20Color%20Vars"></a>
+                <a name="//apple_ref/swift/Section/Word Count and Color Vars" class="dashAnchor"></a>
+                <a href="#/Word%20Count%20and%20Color%20Vars">
+                  <h3 class="section-name">Word Count and Color Vars</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9wordCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/wordCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9wordCountSivp">wordCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of words currently found</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">wordCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9nextColorSivp"></a>
+                    <a name="//apple_ref/swift/Property/nextColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9nextColorSivp">nextColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Next color index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">nextColor</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC6colorsSaySo7UIColorCGvp"></a>
+                    <a name="//apple_ref/swift/Property/colors" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC6colorsSaySo7UIColorCGvp">colors</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Colors from Asset bundle using static method from custom UIColor extension</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)didPressResetButton:"></a>
+                    <a name="//apple_ref/swift/Method/didPressResetButton(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)didPressResetButton:">didPressResetButton(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles button to reset game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">didPressResetButton</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC5resetyyF"></a>
+                    <a name="//apple_ref/swift/Method/reset()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC5resetyyF">reset()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the Game, returning to the main screen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC15setupWordSearchyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupWordSearch()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC15setupWordSearchyyF">setupWordSearch()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up wordSearch by getting words</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setupWordSearch</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC22wordsSelectedDidChangeyyF"></a>
+                    <a name="//apple_ref/swift/Method/wordsSelectedDidChange()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC22wordsSelectedDidChangeyyF">wordsSelectedDidChange()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates wordsCollectedLabel&rsquo;s text to new wordCount value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">wordsSelectedDidChange</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC014setupWordsListE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/setupWordsListView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC014setupWordsListE0yyF">setupWordsListView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up TagListView, adding words to be found from wordSearch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setupWordsListView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionView%20Protocol%20Conformations"></a>
+                <a name="//apple_ref/swift/Section/UICollectionView Protocol Conformations" class="dashAnchor"></a>
+                <a href="#/UICollectionView%20Protocol%20Conformations">
+                  <h3 class="section-name">UICollectionView Protocol Conformations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:numberOfItemsInSection:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:numberOfItemsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:numberOfItemsInSection:">collectionView(_:numberOfItemsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:cellForItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:cellForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:cellForItemAtIndexPath:">collectionView(_:cellForItemAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionView%20Protocol%20Conformations2"></a>
+                <a name="//apple_ref/swift/Section/UICollectionView Protocol Conformations" class="dashAnchor"></a>
+                <a href="#/UICollectionView%20Protocol%20Conformations2">
+                  <h3 class="section-name">UICollectionView Protocol Conformations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:layout:sizeForItemAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:layout:sizeForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)collectionView:layout:sizeForItemAtIndexPath:">collectionView(_:layout:sizeForItemAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">layout</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span><span class="p">,</span> <span class="n">sizeForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Swipe%20Selection%20Gesture%20Delegate%20Conformation"></a>
+                <a name="//apple_ref/swift/Section/Swipe Selection Gesture Delegate Conformation" class="dashAnchor"></a>
+                <a href="#/Swipe%20Selection%20Gesture%20Delegate%20Conformation">
+                  <h3 class="section-name">Swipe Selection Gesture Delegate Conformation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC013setCollectionE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/setCollectionView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC013setCollectionE0yyF">setCollectionView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up myCollectionView with Swipe Gesture recognizer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setCollectionView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)didPanToSelectLabelCells:"></a>
+                    <a name="//apple_ref/swift/Method/didPan(toSelectLabelCells:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@Shopify_Fall_2019_Challenge@objc(cs)GameViewController(im)didPanToSelectLabelCells:">didPan(toSelectLabelCells:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles UIPanGestureRecognizer states</p>
+
+<p>Uses @objc flag for selector support in setCollectionView()</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">didPan</span><span class="p">(</span><span class="n">toSelectLabelCells</span> <span class="nv">panGestureRecognizer</span><span class="p">:</span> <span class="kt">UIPanGestureRecognizer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toSelectLabelCells</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>pan gesture recognizer to be handled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC13implementDrag4withySo22UIPanGestureRecognizerC_tF"></a>
+                    <a name="//apple_ref/swift/Method/implementDrag(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC13implementDrag4withySo22UIPanGestureRecognizerC_tF">implementDrag(with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles drag motion changes to constrain swipe direction and communicate wins to the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">implementDrag</span><span class="p">(</span><span class="n">with</span> <span class="nv">panGestureRecognizer</span><span class="p">:</span> <span class="kt">UIPanGestureRecognizer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>with</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>pan gesture recognizer to be handled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC16isValidIndexPath3forSb10Foundation0iJ0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/isValidIndexPath(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC16isValidIndexPath3forSb10Foundation0iJ0V_tF">isValidIndexPath(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if indexPath is not the lastSelectedIndexPath</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isValidIndexPath</span><span class="p">(</span><span class="k">for</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indexPath to be checked</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if indexPath is not equivalent to lastSelectedIndexPath</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC16isValidDirection3for4withSb10Foundation9IndexPathV_Si1x_Si1yttF"></a>
+                    <a name="//apple_ref/swift/Method/isValidDirection(for:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC16isValidDirection3for4withSb10Foundation9IndexPathV_Si1x_Si1yttF">isValidDirection(for:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if direction is the same as one previously determined</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isValidDirection</span><span class="p">(</span><span class="k">for</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="n">with</span> <span class="nv">direction</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>indexPath to be checked</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>with</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>direction as unit vector tuple to be checked</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if direction is the same</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC12getDirection3for9withFirstSi1x_Si1yt10Foundation9IndexPathV_AKtF"></a>
+                    <a name="//apple_ref/swift/Method/getDirection(for:withFirst:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC12getDirection3for9withFirstSi1x_Si1yt10Foundation9IndexPathV_AKtF">getDirection(for:withFirst:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculates direction based on two index paths, using PlacementType enum from WordSearch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getDirection</span><span class="p">(</span><span class="k">for</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="n">withFirst</span> <span class="nv">firstCell</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>index path of last cell</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withFirst</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>index path of first cell</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Direction as a unit vector Tuple</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10selectCell2aty10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/selectCell(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC10selectCell2aty10Foundation9IndexPathV_tF">selectCell(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Selects the cell at given IndexPath</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">selectCell</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>at</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>index path for cell to be selected</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC14didFindNewWordSb0G3Win_SaySJGSg4wordtyF"></a>
+                    <a name="//apple_ref/swift/Method/didFindNewWord()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC14didFindNewWordSb0G3Win_SaySJGSg4wordtyF">didFindNewWord()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if user just found a new word</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didFindNewWord</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">didWin</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">word</span><span class="p">:</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Tuple with didWin: true if new word found, and word: the word found as [Character]</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC20handleDidFindNewWordyyF"></a>
+                    <a name="//apple_ref/swift/Method/handleDidFindNewWord()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC20handleDidFindNewWordyyF">handleDidFindNewWord()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes wordCount and wordLabelDisplay, changes color for word, and changes correct tag&rsquo;s color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleDidFindNewWord</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9handleWinyyF"></a>
+                    <a name="//apple_ref/swift/Method/handleWin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge18GameViewControllerC9handleWinyyF">handleWin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays Alert to share or restart the game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleWin</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://subhanc.com" target="_blank" rel="external">Subhan</a>. All rights reserved. (Last updated: 2019-05-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

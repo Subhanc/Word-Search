@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WordSearch Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/WordSearch" class="dashAnchor"></a>
+    <a title="WordSearch Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (66% documented)</p>
+        <p class="header-right"><a href="https://github.com/Subhanc/Shopify-Challenge-iOS-Fall-2019"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        WordSearch Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GameViewController.html">GameViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Label.html">Label</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LabelCollectionViewCell.html">LabelCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Word.html">Word</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WordSearch.html">WordSearch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Difficulty.html">Difficulty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacementType.html">PlacementType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>WordSearch</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">WordSearch</span></code></pre>
+
+                </div>
+              </div>
+            <p>Word Search Object Model to draw words in 1-D and 2-D Arrays as Labels</p>
+
+<p>Use by:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">wordSearch</span> <span class="o">=</span> <span class="kt">WordSearch</span><span class="p">(</span><span class="nv">usingGridSize</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">withDifficulty</span><span class="p">:</span> <span class="o">.</span><span class="n">hard</span><span class="p">)</span>
+<span class="n">wordSearch</span><span class="o">.</span><span class="nf">getDefaultLabels</span><span class="p">()</span>
+<span class="n">wordSearch</span><span class="o">.</span><span class="nf">make</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">labels</span> <span class="o">=</span> <span class="n">wordSearch</span><span class="o">.</span><span class="nf">collapsedLabels</span><span class="p">()</span>
+</code></pre>
+<div class="aside aside-author">
+    <p class="aside-title">Author</p>
+    Subhan Chaudhry
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC5wordsSayAA0D0CGvp"></a>
+                    <a name="//apple_ref/swift/Property/words" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC5wordsSayAA0D0CGvp">words</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of words that need to be found in game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">words</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Word.html">Word</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC6labelsSaySayAA5LabelCGGvp"></a>
+                    <a name="//apple_ref/swift/Property/labels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC6labelsSaySayAA5LabelCGGvp">labels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Two-dimensional array of Labels of all letters to be placed in wordSearch grid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[[</span><span class="kt"><a href="../Classes/Label.html">Label</a></span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC8gridSizeSivp"></a>
+                    <a name="//apple_ref/swift/Property/gridSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC8gridSizeSivp">gridSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Size of wordSearch grid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">gridSize</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC10difficultyAA10DifficultyOvp"></a>
+                    <a name="//apple_ref/swift/Property/difficulty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC10difficultyAA10DifficultyOvp">difficulty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Difficulty of game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">difficulty</span><span class="p">:</span> <span class="kt"><a href="../Enums/Difficulty.html">Difficulty</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC20allLettersInAlphabetSaySJGvp"></a>
+                    <a name="//apple_ref/swift/Property/allLettersInAlphabet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC20allLettersInAlphabetSaySJGvp">allLettersInAlphabet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of alphabets from A-Z, using Unicode scalars</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">allLettersInAlphabet</span><span class="p">:</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC13usingGridSize14withDifficultyACSi_AA0J0Otcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(usingGridSize:withDifficulty:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC13usingGridSize14withDifficultyACSi_AA0J0Otcfc">init(usingGridSize:withDifficulty:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes new game with given gridSize and difficulty type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">usingGridSize</span> <span class="nv">gridSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withDifficulty</span> <span class="nv">difficulty</span><span class="p">:</span> <span class="kt"><a href="../Enums/Difficulty.html">Difficulty</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usingGridSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>using grid size of wordSearch</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withDifficulty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>difficulty of the game</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC18fromWordsAsStrings13usingGridSize14withDifficultyACSaySSG_SiAA0N0Otcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(fromWordsAsStrings:usingGridSize:withDifficulty:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC18fromWordsAsStrings13usingGridSize14withDifficultyACSaySSG_SiAA0N0Otcfc">init(fromWordsAsStrings:usingGridSize:withDifficulty:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience initializer for setting a custom words list as string, with gridSixe and Difficulty type</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">fromWordsAsStrings</span> <span class="nv">strings</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="n">usingGridSize</span> <span class="nv">gridSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withDifficulty</span> <span class="nv">difficulty</span><span class="p">:</span> <span class="kt"><a href="../Enums/Difficulty.html">Difficulty</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromWordsAsStrings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string array for words to be searched by user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>usingGridSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>length and height of grid</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withDifficulty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>difficulty type of game</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC15collapsedLabelsSayAA5LabelCGyF"></a>
+                    <a name="//apple_ref/swift/Method/collapsedLabels()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC15collapsedLabelsSayAA5LabelCGyF">collapsedLabels()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Collapses 2-D Labels array to 1-D for CollectionView use</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">collapsedLabels</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Label.html">Label</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>1-D array from 2-D array</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC15setDefaultWordsyyF"></a>
+                    <a name="//apple_ref/swift/Method/setDefaultWords()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC15setDefaultWordsyyF">setDefaultWords()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets words to default values as per instructions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setDefaultWords</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC4makeyyF"></a>
+                    <a name="//apple_ref/swift/Method/make()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC4makeyyF">make()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up the game</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">make</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC14fillEmptySpots33_5998F409A74EE056A5DC25F0943F8F25LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/fillEmptySpots()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC14fillEmptySpots33_5998F409A74EE056A5DC25F0943F8F25LLyyF">fillEmptySpots()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fills the empty spots in grid after placing words</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">fillEmptySpots</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC9printGridyyF"></a>
+                    <a name="//apple_ref/swift/Method/printGrid()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC9printGridyyF">printGrid()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prints the grid to console</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">printGrid</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC18getAvailableLabels1x1y3for12withMovementSayAA5LabelCGSgSi_SiSSSiAE_SiAFttF"></a>
+                    <a name="//apple_ref/swift/Method/getAvailableLabels(x:y:for:withMovement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC18getAvailableLabels1x1y3for12withMovementSayAA5LabelCGSgSi_SiSSSiAE_SiAFttF">getAvailableLabels(x:y:for:withMovement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns label location for which the word is to be placed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAvailableLabels</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="k">for</span> <span class="nv">word</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withMovement</span> <span class="nv">movement</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Label.html">Label</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>x</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>start x position</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>y</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>start y position</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>word</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>word to be placed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>movement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tuple for x and y unit vectors</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of labels locations</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC8didPlace_12withMovementSbSS_Si1x_Si1yttF"></a>
+                    <a name="//apple_ref/swift/Method/didPlace(_:withMovement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC8didPlace_12withMovementSbSS_Si1x_Si1yttF">didPlace(_:withMovement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if a word can be placed in given movement unit vector direction</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didPlace</span><span class="p">(</span><span class="n">_</span> <span class="nv">word</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withMovement</span> <span class="nv">movement</span><span class="p">:</span> <span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">Int</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>word</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>word item to be placed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>movement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tuple that indicates direction of word to be placed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if word was correctly placed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC7isPlaceySbSSF"></a>
+                    <a name="//apple_ref/swift/Method/isPlace(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC7isPlaceySbSSF">isPlace(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks to see if word can be placed in any direction within the difficulty placementTypes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isPlace</span><span class="p">(</span><span class="n">_</span> <span class="nv">word</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>word</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>word item to be placed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if word is able to be placed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC10placeWordsSayAA0D0CGyF"></a>
+                    <a name="//apple_ref/swift/Method/placeWords()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC10placeWordsSayAA0D0CGyF">placeWords()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Places the words in the grid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">placeWords</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/Word.html">Word</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the word array that were placed</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27Shopify_Fall_2019_Challenge10WordSearchC8setWordsyySayAA0D0CGF"></a>
+                    <a name="//apple_ref/swift/Method/setWords(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27Shopify_Fall_2019_Challenge10WordSearchC8setWordsyySayAA0D0CGF">setWords(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets words to words object of WordSearch</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setWords</span><span class="p">(</span><span class="n">_</span> <span class="nv">words</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/Word.html">Word</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>words</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>given Word array</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://subhanc.com" target="_blank" rel="external">Subhan</a>. All rights reserved. (Last updated: 2019-05-15)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
