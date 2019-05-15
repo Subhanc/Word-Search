@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D160568228C0E04002A5777 /* UIColor+ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D160567228C0E04002A5777 /* UIColor+ColorScheme.swift */; };
 		0D59B5422288C35C00E61C73 /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59B5412288C35C00E61C73 /* LabelCollectionViewCell.swift */; };
 		0D59B5442288C3A100E61C73 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D59B5432288C3A100E61C73 /* GameViewController.swift */; };
 		0D88AA38227BCC7E00BB3225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D88AA37227BCC7E00BB3225 /* AppDelegate.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D160567228C0E04002A5777 /* UIColor+ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ColorScheme.swift"; sourceTree = "<group>"; };
+		0D160569228C176D002A5777 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0D59B5412288C35C00E61C73 /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		0D59B5432288C3A100E61C73 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0D88AA34227BCC7E00BB3225 /* Shopify Fall 2019 Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopify Fall 2019 Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,9 +58,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		0D160566228C0DE5002A5777 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0D160567228C0E04002A5777 /* UIColor+ColorScheme.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		0D88AA2B227BCC7E00BB3225 = {
 			isa = PBXGroup;
 			children = (
+				0D160569228C176D002A5777 /* README.md */,
 				0D88AA36227BCC7E00BB3225 /* Shopify Fall 2019 Challenge */,
 				0D88AA35227BCC7E00BB3225 /* Products */,
 				0D0EA3A637EF0132CF454A9E /* Pods */,
@@ -76,6 +88,7 @@
 		0D88AA36227BCC7E00BB3225 /* Shopify Fall 2019 Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				0D160566228C0DE5002A5777 /* Extension */,
 				0D88AA4B227BCDA000BB3225 /* Controller */,
 				0D88AA4A227BCD9A00BB3225 /* View */,
 				0D88AA49227BCD2A00BB3225 /* Model */,
@@ -237,6 +250,7 @@
 				0DC76617228755400040CC9D /* Word.swift in Sources */,
 				0D962ABB228764F800F5D7B0 /* WordSearch.swift in Sources */,
 				0D88AA38227BCC7E00BB3225 /* AppDelegate.swift in Sources */,
+				0D160568228C0E04002A5777 /* UIColor+ColorScheme.swift in Sources */,
 				0D59B5422288C35C00E61C73 /* LabelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

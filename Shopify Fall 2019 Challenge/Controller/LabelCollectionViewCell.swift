@@ -9,23 +9,44 @@
 import UIKit
 
 class LabelCollectionViewCell: UICollectionViewCell {
+    
+    /// UILabel for letter Character
     @IBOutlet weak var label: UILabel!
     
+    /// Var to check if cell is used for a winning word
     var isWord = false
     
     override var isSelected: Bool {
         didSet {
+            // if used in a word, do not change backgroundColor back to white or gray
             if !isWord {
-                self.backgroundColor = self.isSelected ? .gray : .white
+                self.backgroundColor = self.isSelected ? UIColor(named: "DeepPurple")! : UIColor(named: "DarkPurple")!
             }
         }
     }
     
-    func greenBckg() {
-        self.backgroundColor = .green
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // cell design
+        self.layer.cornerRadius = 8
+        self.isUserInteractionEnabled = false
+    }
+    
+    /**
+     Sets backgroundColor to specified color
+     
+     - Parameter to: color to be changed to
+     */
+    func setColor(to color: UIColor) {
+        self.backgroundColor = color
         isWord = true
     }
     
+    /**
+     Sets the label to specified text
+     
+     - Parameter text: text to be used
+     */
     func set(withText text: String) {
         label.text = text
     }
