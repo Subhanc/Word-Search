@@ -5,8 +5,8 @@
     <img src="/images/inGameScreen.png" width="200"/>
     <img src="/images/SharePage2.png" width="200"/>
 </p>
-## Installation
 
+## Installation
 To build and run the project, click on "Open in Xcode" on GitHub, run `pod init` in the project directory, and open in Xcode and Build and Run.
 
 ## Credits
