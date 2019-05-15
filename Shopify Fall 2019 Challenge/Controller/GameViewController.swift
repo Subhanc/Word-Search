@@ -181,6 +181,13 @@ extension GameViewController: UIGestureRecognizerDelegate {
     
     func handleWin() {
         if didWinWordSearch() {
+            if let selectedPaths = myCollectionView.indexPathsForSelectedItems {
+                for indexPath in selectedPaths {
+                    let cell = myCollectionView.cellForItem(at: indexPath) as! LabelCollectionViewCell
+                    cell.greenBckg()
+                }
+            }
+            
             // TODO: Finish word search winning
         }
     }

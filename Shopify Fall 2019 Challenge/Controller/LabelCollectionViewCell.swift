@@ -11,10 +11,19 @@ import UIKit
 class LabelCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
+    var isWord = false
+    
     override var isSelected: Bool {
         didSet {
-            self.backgroundColor = self.isSelected ? .gray : .white
+            if !isWord {
+                self.backgroundColor = self.isSelected ? .gray : .white
+            }
         }
+    }
+    
+    func greenBckg() {
+        self.backgroundColor = .green
+        isWord = true
     }
     
     func set(withText text: String) {
