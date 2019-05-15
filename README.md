@@ -3,7 +3,6 @@
     <img src="/images/screen.gif" width="200"/>
     <img src="/images/startGame.png" width="200"/>
     <img src="/images/inGameScreen.png" width="200"/>
-    <img src="/images/SharePage.png" width="200"/>
     <img src="/images/SharePage2.png" width="200"/>
 </p>
 ## Installation
