@@ -1,4 +1,4 @@
-#  Shopify Intern Challenge for iOS Engineering Internship Fall 2019
+#  Wordy
 <p float="left" align="center">
     <img src="/images/screen.gif" width="200"/>
     <img src="/images/startGame.png" width="200"/>
