@@ -1,4 +1,7 @@
-#  Wordy
+#  Word-Search-Game-iOS
+This project was built for the Shopify Fall 2019 iOS Challenge 
+
+Includes a custom word search grid algorithm written in Swift
 <p float="left" align="center">
     <img src="/images/screen.gif" width="200"/>
     <img src="/images/startGame.png" width="200"/>
@@ -9,8 +12,11 @@
 ## Installation
 To build and run the project, click on "Open in Xcode" on GitHub, run `pod init` in the project directory, and open in Xcode and Build and Run.
 
-## Documentation
-Documentation for the entire project can be viewed through the docs folder or live on https://subhanc.com/Shopify-Challenge-iOS-Fall-2019
+## Documentation 
+
+Unavailable. Feel free to use Jazzy to export a documentation page.
+
+https://github.com/realm/jazzy
 
 ## Credits
 Designed and Developed by Subhan Chaudhry
