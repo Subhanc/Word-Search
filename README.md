@@ -1,7 +1,7 @@
 #  Word-Search-Game-iOS
 This project was built for the Shopify Fall 2019 iOS Challenge 
 
-Includes a custom word search grid algorithm written in Swift
+Includes a custom word search grid algorithm written in Swift. Exportable to your own application! 
 <p float="left" align="center">
     <img src="/images/screen.gif" width="200"/>
     <img src="/images/startGame.png" width="200"/>
