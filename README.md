@@ -1,5 +1,5 @@
 #  Word-Search-Game-iOS
-This project was built for the Shopify Fall 2019 iOS Challenge 
+This project was built for the Shopify Fall 2019 iOS Challenge (Rejected)
 
 <p float="left" align="center">
     <img src="/images/screen.gif" width="200"/>
